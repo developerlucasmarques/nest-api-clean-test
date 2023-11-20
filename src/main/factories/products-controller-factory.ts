@@ -6,7 +6,7 @@ import { AddProductController } from '../../presentation/controllers/add-product
 
 export const addProductControllerFactory = (): Controller => {
   const prisma = new PrismaClient()
-  const primsa = new ProductPrismaRepo(prisma)
-  const addProductUseCase = new AddProductUseCase(primsa)
+  const prismaProduct = new ProductPrismaRepo(prisma)
+  const addProductUseCase = new AddProductUseCase(prismaProduct)
   return new AddProductController(addProductUseCase)
 }
