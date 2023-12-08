@@ -1,4 +1,4 @@
-import { type AddProduct } from 'src/domain/contracts/add-product'
+import { type AddProduct } from '@/domain/contracts/add-product'
 import { type Controller } from '../contracts'
 import { type HttpRequest, type HttpResponse } from '../http/http'
 import { badRequest, noContent } from '../http/http-helpers'
